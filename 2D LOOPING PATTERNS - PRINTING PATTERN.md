@@ -1,36 +1,35 @@
 # Exp.No:2d
-## LOOPING PATTERNS - PRINTING PATTERN
+## LOOPING PATTERNS -Reverse Number Pattern Printing in Python
 
----
 
 ### AIM  
-To write a Python program to print a triangular star pattern using loops.
-
----
+To write a Python program that prints a reverse numeric pattern based on the number of rows entered by the user.
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Read the integer `n` from the user using `input()`. This will determine the number of rows in the pattern.  
-3. Initialize a variable `i = 0`. This will help adjust the spacing before the stars.  
-4. Loop through rows from `0` to `n - 1`:  
-   - For each row, calculate the number of spaces to print using the formula: `((n - rows - 1) * 2) + i`.  
-   - Print the calculated number of spaces using `print(" ", end="")`.  
-   - Increment `i` by 1 after each row.  
-   - Print stars using a nested loop: the number of stars in each row is `rows + 1`, printed using `print("*", end="  ")`.  
-   - Print a newline after each row using `print("")` to move to the next line.  
-5. Terminate the program.
-
----
+```
+1.Start the program.
+2.Read the number of rows from the user and store it in rows.
+3.Use a for loop that runs from rows down to 1.
+4.For each row, set num = i.
+5.Use an inner loop to print the value of num repeatedly for i times.
+6.Move to the next line after printing each row.
+7.End the program.
+```
 
 ### PROGRAM
 ```
-#Reg.No:
-#Name:
-#Add Your Code Here
-
+rows = int(input())
+for i in range(rows,0,-1):
+    num = i
+    for j in range(0,i):
+        print(num,end=' ')
+    print("")
 ```
 
 ### OUTPUT
+<img width="1180" height="307" alt="image" src="https://github.com/user-attachments/assets/f9cba587-bdd6-4b09-9b50-0f92e44a5cc9" />
+
 
 ### RESULT
+The program successfully reads the number of rows and prints a reverse numeric pattern where each row displays repeated values from the highest number down to 1.
